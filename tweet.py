@@ -30,7 +30,7 @@ class listener(StreamListener):
 			time = ""
 
 		if tweet != "" and user != "" and time != "":
-			tweet = tweet.encode('base64','strict')
+			tweet = tweet.encode('base64','ignore')
 			con.query("INSERT INTO tweet (`by`, `tweet`, `time`) VALUES ('%s', '%s', '%s')" % (user, tweet, time))
 			sys.stdout.write("\rTotal tweets: %i" % totalTweets)
 			totalTweets += 1
