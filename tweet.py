@@ -6,10 +6,12 @@ import sys
 import db
 import json
 
-ckey = 'g3xJmsw62CWj4XTZpopqg'
-csecret = 'oMOIZUn6ZwqvqqavPMvV0nqbiigrOWwjo97IqJEHKqo'
-atoken = '285503765-LHwtFvf5ZoevpA3bBHVEDP8EtotWgnHZTfffxVay'
-asecret = '8mWIId8UHcvA1LGPT3A6lT4uewG6dlt3usy1ZVJ8U40Bu'
+
+#To get the keys, make an app on twitter
+ckey = ''
+csecret = ''
+atoken = ''
+asecret = ''
 
 totalTweets = 1
 con = db.dbconnect()
