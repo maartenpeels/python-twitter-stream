@@ -1,0 +1,41 @@
+-- phpMyAdmin SQL Dump
+-- version 4.0.4.1
+-- http://www.phpmyadmin.net
+--
+-- Machine: 127.0.0.1
+-- Genereertijd: 12 dec 2013 om 22:19
+-- Serverversie: 5.5.32
+-- PHP-versie: 5.4.19
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Databank: `tweets`
+--
+CREATE DATABASE IF NOT EXISTS `tweets` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `tweets`;
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `tweet`
+--
+
+CREATE TABLE IF NOT EXISTS `tweet` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `by` varchar(255) NOT NULL,
+  `tweet` text NOT NULL,
+  `time` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
